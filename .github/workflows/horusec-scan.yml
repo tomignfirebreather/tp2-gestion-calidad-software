@@ -1,0 +1,24 @@
+name: SecurityPipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  horusec_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Horusec CLI
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
+
+      - name: Run Horusec Scan
+        run: |
+          horusec start -p . \
+            --config-file-path=horusec-config.json \
+            --return-error=true
