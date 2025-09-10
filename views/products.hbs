@@ -1,0 +1,62 @@
+<main>
+    <section id="menuOpciones">
+        <div>
+            <ul>
+                <h3>Tragos:</h3>
+                <a href="/pages/paginaProductos.html">
+                    <li>Primer tipo</li>
+                </a>
+                <a href="/pages/paginaProductos.html">
+                    <li>Segundo tipo</li>
+                </a>
+                <a href="/pages/paginaProductos.html">
+                    <li>Tercer tipo</li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h3>Combos:</h3>
+                <a href="/pages/paginaProductos.html">
+                    <li>Primer tipo</li>
+                </a>
+                <a href="/pages/paginaProductos.html">
+                    <li>Segundo tipo</li>
+                </a>
+                <a href="/pages/paginaProductos.html">
+                    <li>Tercer tipo</li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h3>Accesorios:</h3>
+                <a href="/pages/paginaProductos.html">
+                    <li>Primer tipo</li>
+                </a>
+                <a href="/pages/paginaProductos.html">
+                    <li>Segundo tipo</li>
+                </a>
+                <a href="/pages/paginaProductos.html">
+                    <li>Tercer tipo</li>
+                </a>
+            </ul>
+        </div>
+    </section>
+    <section id="seccionProductos">
+        <div id="columnaProductos">
+            {{#each products}}
+                <div class="producto" id="{{_id}}">
+                    <div class="imagenProducto">
+                        <img src="{{productImage}}" alt="{{productName}}">
+                    </div>
+                    <div class="descripcionProducto">
+                        <h2>{{productName}}</h2>
+                        <p>${{productDescription}}</p>
+                        <button type="button" class="btn btn-custom buscarProducto">Ver Producto</button>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </section>
+</main>

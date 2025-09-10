@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    background-image: linear-gradient(to right, rgb(6, 11, 39) 40%, rgb(217, 13, 122) 100%);
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 40px;
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+header div, header ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+}
+
+header li {
+    list-style: none;
+}
+
+header button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 6px;
+}
+
+header button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+}
+
+header .barte {
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+}
+
+header .barte:hover {
+    color: #E6E6E6;
+    background-color: transparent;
+}
+
+footer {
+    padding: 0 40px 20px 40px;
+}
+
+#pieDePagina {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+#pieDePagina a {
+    text-decoration: none;
+    margin: 0.5em;
+}
+
+#pieDePagina h4 {
+    margin-bottom: 20px;
+}
+
+#pieDePagina div:last-of-type ul h4 {
+    margin-bottom: 40px;
+}
+
+.bi-instagram:hover path,
+.bi-facebook:hover path,
+.bi-linkedin:hover path {
+    fill: #E6E6E6;
+}

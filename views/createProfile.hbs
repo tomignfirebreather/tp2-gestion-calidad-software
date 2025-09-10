@@ -1,0 +1,31 @@
+<main>
+    <form action="/clients/profile/register" method="post">
+        <div>
+            <span class="material-symbols-outlined">
+                cancel
+            </span>
+            <h3>
+                Creemos tu cuenta
+            </h3>
+        </div>
+        <div>
+            <label>Nombre: <span class="obligatorios">*</span>
+                <input type="text" name="userName" required placeholder="Escribe tu nombre">
+            </label>
+            <label>Email: <span class="obligatorios">*</span>
+                <input type="email" name="userEmail" required placeholder="Escribe tu email">
+            </label>
+            <label>Contraseña: <span class="obligatorios">*</span>
+                <input type="password" name="userPass" required placeholder="Escribe la contraseña">
+            </label>
+            <label>Repetir Contraseña: <span class="obligatorios">*</span>
+                <input type="password" name="userPassConfirm" required placeholder="Repite la contraseña">
+            </label>
+            <p id="aclaracion"><span class="obligatorios">*</span> los campos son obligatorios.</p>
+        </div>
+        <div id="botonesFormulario">
+            <input id="botonEnviar" type="submit" value="ENVIAR">
+            <input id="botonBorrar" type="reset" value="BORRAR">
+        </div>
+    </form>
+</main>

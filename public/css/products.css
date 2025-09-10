@@ -1,0 +1,136 @@
+main {
+    background-color: rgb(6, 11, 39);
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 4%;
+}
+
+#menuOpciones {
+    background-image: linear-gradient(to left, rgb(6, 11, 39) 20%, rgba(102, 16, 242, 0.5) 100%);
+    box-shadow: 0 0 10px rgb(102, 16, 242);
+    border-radius: 16px;
+    color: white;
+    width: 16%;
+    height: 800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#menuOpciones div {
+    margin: 32px 24px 0px 24px;
+    font-size: 1em;
+}
+
+#menuOpciones ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menuOpciones h3 {
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 1.4em;
+}
+
+#menuOpciones a {
+    text-decoration: none;
+    color: white;
+}
+
+#menuOpciones li {
+    margin-bottom: 10px;
+    text-align: start;
+    list-style: none;
+    font-size: 0.9em;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+#menuOpciones li:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#seccionProductos {
+    background-image: linear-gradient(to right, rgb(6, 11, 39) 60%, rgba(217, 13, 122, 0.5) 100%);
+    box-shadow: 0 0 10px rgb(217, 13, 122);
+    border-radius: 16px;
+    width: 80%;
+    height: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#columnaProductos {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.producto:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1.8px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+}
+
+.imagenProducto, .descripcionProducto {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.descripcionProducto {
+    padding: 40px;
+    width: 80%;
+    height: auto;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+
+.imagenProducto {
+    width: 300px;
+    height: auto;
+}
+
+.imagenProducto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.descripcionProducto h2 {
+    color:white;
+    font-size: 1.6em;
+}
+
+.btn-custom {
+    background-color: #6610f2;
+    border-color: #6610f2;
+    color: white; /* Color del texto */
+}
+.btn-custom:hover {
+    background-color: #520be0; /* Color más oscuro para el hover */
+    border-color: #520be0;
+}

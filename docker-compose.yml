@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: node_app
+    ports:
+      - "${PORT}:${PORT}"   # Mapea puerto desde .env
+    env_file:
+      - .env                # Carga todas las variables de tu archivo .env
+    restart: unless-stopped

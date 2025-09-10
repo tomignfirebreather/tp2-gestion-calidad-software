@@ -1,0 +1,22 @@
+<main>
+    <form action="/clients/session/login" method="post">
+        <div>
+            <span class="material-symbols-outlined">
+                cancel
+            </span>
+            <h3>
+                Iniciemos tu sesión
+            </h3>
+        </div>
+        <div>
+            <label>Email: <span class="obligatorios">*</span>
+                <input type="email" name="userEmail" required placeholder="Escribe tu email">
+            </label>
+            <label>Contraseña: <span class="obligatorios">*</span>
+                <input type="password" name="userPass" required placeholder="Escribe tu contraseña">
+            </label>
+            <p id="aclaracion"><span class="obligatorios">*</span> los campos son obligatorios.</p>
+        </div>
+        <input id="boton" type="submit" value="ENVIAR">
+    </form>
+</main>

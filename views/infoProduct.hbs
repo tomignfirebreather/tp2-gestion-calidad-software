@@ -1,0 +1,33 @@
+<main>
+    <section id="seccionProductos">
+        <div class="producto" id="{{product._id}}">
+            <div class="imagenProducto">
+                <img src="{{product.productImage}}" alt="{{product.productName}}">
+            </div>
+            <div class="descripcionProducto">
+                <h2>{{product.productName}}</h2>
+                <p>{{product.productDescription}}</p>
+                <h3>{{product.productPrice}}</h3>
+                <div id="cantidades">
+                    <div class="dropdown">
+                        <button id="miBoton" class="btn btn-secondary btn-sm dropdown-toggle mt-2 mb-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cantidad: 1 unidad
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item btn-custom2 btn-interac" type="button">1 unidad</button></li>
+                            <li><button class="dropdown-item btn-custom2 btn-interac" type="button">2 unidades</button></li>
+                            <li><button class="dropdown-item btn-custom2 btn-interac" type="button">3 unidades</button></li>
+                            <li><button class="dropdown-item btn-custom2 btn-interac" type="button">4 unidades</button></li>
+                            <li><button class="dropdown-item btn-custom2 btn-interac" type="button">5 unidades</button></li>
+                        </ul>
+                    </div>
+                    <p>({{product.productStock}} disponibles)</p>
+                </div>
+                <div class="d-flex gap-4 w-100">
+                    <button class="btn btn-custom w-100" type="button">Comprar ahora</button>
+                    <button class="btn btn-custom2 w-100" type="button">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
